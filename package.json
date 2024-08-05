@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "sass": "sass scss/main.scss ./src/assets/css/main.css --no-source-map",
+    "sass:watch": "sass --watch scss/main.scss:./src/assets/css/main.css --no-source-map"
+  },
+  "keywords": [],
+  "author": "@rgrlinux",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

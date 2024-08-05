@@ -1,0 +1,38 @@
+// scss/custom.scss
+
+.flag-icon:hover {
+    box-shadow: 0 8px 12px rgba(255, 255, 255, 0.5); // Ajuste os valores de sombra conforme necessário
+    transition: box-shadow 0.3s ease-in-out; // Suaviza a transição do efeito
+}
+
+.navbar-custom{
+    gap: 10rem;
+    .nav-link{
+        color: $navbar-dark-color;
+        font-family: $secondary-font;
+        // gap: 4rem;
+    }
+    .nav-link:hover{
+        color: $main-color-2;
+    }
+    .nav-link.active{
+        color: $main-color-2;
+    }
+}
+
+.hero{
+    color: $main-color-2;
+    .hero__content{
+        align-items: center;
+        justify-content: end;
+    }
+
+}
+
+.masked-image {
+    width: 100%; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  }
+  
