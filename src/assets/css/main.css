@@ -1,13 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&family=Saira:wght@400;500;600&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css");
-/*#4356FF; */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-image: linear-gradient(to bottom right, #2f3241, #0A0A0A);
+  background-image: linear-gradient(to bottom right, #212538, #0A0A0A);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,25 +36,60 @@ nav {
   font-family: "Saira";
 }
 .navbar-custom .nav-link:hover {
-  color: #394896;
+  color: #4356FF;
 }
 .navbar-custom .nav-link.active {
-  color: #394896;
+  color: #4356FF;
 }
 
 .hero {
-  color: #394896;
+  color: #4356FF;
+  padding: 2rem;
 }
 .hero .hero__content {
   align-items: center;
-  justify-content: end;
+  justify-content: center;
+}
+.hero .hero__content h1, .hero .hero__content .h1 {
+  font-size: 4rem;
+  font-family: "Saira";
+  font-weight: 900;
+}
+.hero .hero__content h2, .hero .hero__content .h2 {
+  font-size: 1.25rem;
+  font-family: "Roboto";
+  font-weight: 100;
+  letter-spacing: 1.75rem; /* Ajuste conforme necessário */
+  color: #c5c6c7; /* Ajuste conforme necessário */
+}
+.hero .skills {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Saira";
 }
 
 .masked-image {
-  width: 100%; /* Ajuste conforme necessário */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 100%;
+  height: auto;
   -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.custom-btn {
+  border: 2px solid #4356FF;
+  color: #4356FF;
+  background-color: transparent;
+  border-radius: 15px; /* Ajuste conforme necessário */
+  padding: 0.5rem 2rem; /* Ajuste conforme necessário */
+  font-size: 1.25rem; /* Ajuste conforme necessário */
+  transition: all 0.3s ease;
+  font-family: "Saira";
+}
+
+.custom-btn:hover {
+  background-color: #4356FF;
+  color: #fff;
 }
 
 /*!

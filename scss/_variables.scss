@@ -2,10 +2,11 @@
 $primary: #0a273a;
 $secondary: #2ecc71;
 $gradient-color-2: #0A0A0A;
-$gradient-color-1: #2f3241;
+$gradient-color-1: #212538;  
 
-$main-color-1: hsl(234, 100%, 63%);        /*#4356FF; */
-$main-color-2: #394896;
+// $main-color-1: hsl(234, 41%, 35%);        /*#4356FF; */
+$main-color-1: #4356FF;
+$main-color-2: #1b2763;
 
 $navbar-dark-color: #fff;
 
@@ -13,4 +14,5 @@ $navbar-dark-color: #fff;
 // typography
 // $font-family: 'Roboto', sans-serif !default;
 $secondary-font: "Saira";
-$primary-font: "Roboto"
+$primary-font: "Roboto";
+$font-xtrabold: 900;
