@@ -28,17 +28,24 @@ nav {
   transition: box-shadow 0.3s ease-in-out;
 }
 
-.navbar-custom {
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav {
   gap: 10rem;
 }
-.navbar-custom .nav-link {
+.nav .nav-link {
   color: #fff;
   font-family: "Saira";
 }
-.navbar-custom .nav-link:hover {
+.nav .nav-link:hover {
   color: #4356FF;
 }
-.navbar-custom .nav-link.active {
+.nav .nav-link.active {
   color: #4356FF;
 }
 
