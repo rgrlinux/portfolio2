@@ -1,0 +1,15 @@
+# Dependências do Node.js
+node_modules/
+
+# Arquivos e diretórios temporários
+.DS_Store
+*.log
+
+# Configurações de IDEs
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Arquivos de sistema
+*.swp
