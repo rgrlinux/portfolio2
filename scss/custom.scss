@@ -9,7 +9,9 @@ header{
   top: 0;
   width: 100%;
   z-index: 1000;
-  //background-color: rgba(255, 255, 255, 0.8);
+  background-color: #0a273a;
+  background-blend-mode: luminosity;
+  background-image: linear-gradient(to bottom right, $gradient-color-1, $gradient-color-2);
 }
 //.navbar-custom
 .nav{
@@ -58,6 +60,95 @@ header{
 
 }
 
+.about{
+
+    h1{
+      text-align: center;
+      font-family: $secondary-font;
+    }
+    svg {
+      width: 3rem;
+      height: auto;
+      padding-right: 0.2rem;
+    }
+    p{
+      font-family: $primary-font;
+    }
+    .content {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      //align-content: center;
+    }
+    .content-left {
+      width: 80%;
+      flex: 2;
+      background-color: transparent;
+      padding: 20px;
+  }
+  .box-right {
+    flex: 1;
+    height: 50%; /* Define a altura do box da direita */
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid $main-color-1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    h1 {
+      color: $main-color-1;
+      font-size: 2rem;
+    }
+    img{
+      padding-right: 1rem;
+    }
+    .work-experience {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .experience-item {
+      display: flex;
+      justify-content: space-between; /* Distribui os elementos horizontalmente */
+      align-items: center; /* Centraliza os itens verticalmente */
+      background-color: #1A1A1A;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .experience-icon img {
+      width: 50px; /* Ajuste conforme necessário */
+      height: auto;
+    }
+
+    .experience-details {
+      flex: 1; /* Ocupa o espaço disponível entre o ícone e as datas */
+      padding-left: 20px;
+    }
+
+    .experience-details h3 {
+      margin: 0;
+      font-family: $secondary-font;
+      font-size: 1.125rem;
+      color: #fff;
+    }
+
+    .experience-details p {
+      margin: 0;
+      font-family: $primary-font;
+      font-size: .875rem;
+      color: #aaa;
+    }
+
+    .experience-dates {
+      font-size: .875rem;
+      font-family: $secondary-font;
+      color: #007bff; /* Ajuste a cor conforme necessário */
+    }
+  }
+}
+
+
+
+
 .masked-image {
   width: 100%;
   height: auto;
@@ -66,7 +157,7 @@ header{
 }
 
   
-  .custom-btn {
+.custom-btn {
     border: 2px solid $main-color-1;
     color: $main-color-1;
     background-color: transparent;

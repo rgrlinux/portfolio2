@@ -8,8 +8,11 @@ html {
 body {
   background-image: linear-gradient(to bottom right, #212538, #0A0A0A);
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0;
+  padding-top: 50px;
   color: white;
   height: 100vh;
 }
@@ -23,6 +26,14 @@ nav {
   color: white;
 }
 
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
 .flag-icon:hover {
   box-shadow: 0 8px 12px rgba(255, 255, 255, 0.5);
   transition: box-shadow 0.3s ease-in-out;
@@ -33,6 +44,9 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
+  background-color: #0a273a;
+  background-blend-mode: luminosity;
+  background-image: linear-gradient(to bottom right, #212538, #0A0A0A);
 }
 
 .nav {
@@ -74,6 +88,84 @@ header {
   font-size: 1.5rem;
   color: #fff;
   font-family: "Saira";
+}
+
+.about h1, .about .h1 {
+  text-align: center;
+  font-family: "Saira";
+}
+.about svg {
+  width: 3rem;
+  height: auto;
+  padding-right: 0.2rem;
+}
+.about p {
+  font-family: "Roboto";
+}
+.about .content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.about .content-left {
+  width: 80%;
+  flex: 2;
+  background-color: transparent;
+  padding: 20px;
+}
+.about .box-right {
+  flex: 1;
+  height: 50%; /* Define a altura do box da direita */
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid #4356FF;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.about .box-right h1, .about .box-right .h1 {
+  color: #4356FF;
+  font-size: 2rem;
+}
+.about .box-right img {
+  padding-right: 1rem;
+}
+.about .box-right .work-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about .box-right .experience-item {
+  display: flex;
+  justify-content: space-between; /* Distribui os elementos horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  background-color: #1A1A1A;
+  padding: 15px;
+  border-radius: 10px;
+}
+.about .box-right .experience-icon img {
+  width: 50px; /* Ajuste conforme necessário */
+  height: auto;
+}
+.about .box-right .experience-details {
+  flex: 1; /* Ocupa o espaço disponível entre o ícone e as datas */
+  padding-left: 20px;
+}
+.about .box-right .experience-details h3, .about .box-right .experience-details .h3 {
+  margin: 0;
+  font-family: "Saira";
+  font-size: 1.125rem;
+  color: #fff;
+}
+.about .box-right .experience-details p {
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  color: #aaa;
+}
+.about .box-right .experience-dates {
+  font-size: 0.875rem;
+  font-family: "Saira";
+  color: #007bff; /* Ajuste a cor conforme necessário */
 }
 
 .masked-image {
