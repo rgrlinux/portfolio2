@@ -117,8 +117,7 @@ header {
 }
 .about .box-right {
   flex: 1;
-  height: 30rem;
-  padding: 20px;
+  height: 31rem;
   background-color: transparent;
   border: 1px solid #4356FF;
   border-radius: 8px;
@@ -175,6 +174,36 @@ header {
   font-size: 0.75rem;
   font-family: "Saira";
   color: #007bff; /* Ajuste a cor conforme necessário */
+}
+.about .box-right .work-footer {
+  color: #007bff;
+  position: sticky;
+  background-color: #1A1A1A;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 3rem;
+  z-index: 10;
+  align-items: center;
+}
+.about .box-right .work-footer a {
+  text-decoration: none;
+  color: #4356FF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.about .box-right .work-footer a:hover {
+  color: #9da9b0;
+}
+.about .box-right .work-footer svg {
+  padding-left: 1rem;
+}
+
+.scrollable-content {
+  padding-top: 0;
 }
 
 /* Estilizando a barra de rolagem */

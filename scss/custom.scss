@@ -87,20 +87,13 @@ header{
     }
     .box-right {
         flex: 1;
-        height: 30rem;
-        padding: 20px;
+        height: 31rem;
+        //padding: 20px;
         background-color: transparent;
         border: 1px solid $main-color-1;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         overflow-y: auto;
-        //::-webkit-scrollbar {
-        //    width: 1px;
-        //}
-        //::-webkit-scrollbar-thumb {
-        //    background-color: #007bff; /* Cor da barra de rolagem */
-        //    border-radius: 10px;
-        //}
         .work_header{
             position: sticky;
             background-color: #1A1A1A;
@@ -131,12 +124,10 @@ header{
             width: 50px; /* Ajuste conforme necessário */
             height: auto;
         }
-
         .experience-details {
             flex: 1; /* Ocupa o espaço disponível entre o ícone e as datas */
             padding-left: 20px;
         }
-
         .experience-details h3 {
             margin: 0;
             font-family: $secondary-font;
@@ -154,12 +145,40 @@ header{
             font-family: $secondary-font;
             color: #007bff; /* Ajuste a cor conforme necessário */
         }
-
-  }
+        .work-footer{
+            color: #007bff;
+            position: sticky;
+            background-color: #1A1A1A;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            height: 3rem;
+            z-index: 10;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: $main-color-1;
+                //margin-right: 2rem;
+                //padding-right: 2rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            a:hover{
+                color: #9da9b0;
+            }
+            svg{
+                padding-left: 1rem;
+            }
+        }
+    }
 }
 
 
 .scrollable-content {
+    padding-top: 0;
     //flex-grow: 1;
 }
 
