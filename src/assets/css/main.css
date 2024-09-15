@@ -90,6 +90,9 @@ header {
   font-family: "Saira";
 }
 
+.about {
+  padding-top: 4rem;
+}
 .about h1, .about .h1 {
   text-align: center;
   font-family: "Saira";
@@ -101,46 +104,52 @@ header {
 }
 .about p {
   font-family: "Roboto";
+  text-align: justify;
 }
 .about .content {
+  height: 90%;
   display: flex;
-  gap: 20px;
-  align-items: center;
 }
 .about .content-left {
-  width: 80%;
   flex: 2;
   background-color: transparent;
-  padding: 20px;
+  padding: 1em 8em;
 }
 .about .box-right {
   flex: 1;
-  height: 50%; /* Define a altura do box da direita */
+  height: 30rem;
   padding: 20px;
   background-color: transparent;
   border: 1px solid #4356FF;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
 }
-.about .box-right h1, .about .box-right .h1 {
+.about .box-right .work_header {
+  position: sticky;
+  background-color: #1A1A1A;
+  top: 0;
+  left: 0;
+  padding-top: 0;
+  margin-top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.about .box-right .work_header h1, .about .box-right .work_header .h1 {
+  padding: 0;
+  margin: 0;
   color: #4356FF;
   font-size: 2rem;
 }
-.about .box-right img {
+.about .box-right .work_header h1 img, .about .box-right .work_header .h1 img {
   padding-right: 1rem;
-}
-.about .box-right .work-experience {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 .about .box-right .experience-item {
   display: flex;
   justify-content: space-between; /* Distribui os elementos horizontalmente */
   align-items: center; /* Centraliza os itens verticalmente */
-  background-color: #1A1A1A;
-  padding: 15px;
-  border-radius: 10px;
+  background-color: transparent;
+  padding: 10px;
 }
 .about .box-right .experience-icon img {
   width: 50px; /* Ajuste conforme necessário */
@@ -153,19 +162,33 @@ header {
 .about .box-right .experience-details h3, .about .box-right .experience-details .h3 {
   margin: 0;
   font-family: "Saira";
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #fff;
 }
 .about .box-right .experience-details p {
   margin: 0;
   font-family: "Roboto";
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #aaa;
 }
 .about .box-right .experience-dates {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-family: "Saira";
   color: #007bff; /* Ajuste a cor conforme necessário */
+}
+
+/* Estilizando a barra de rolagem */
+.scrollable-content::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Cor da barra de rolagem */
+  border-radius: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: #1A1A1A; /* Cor do fundo da barra de rolagem */
 }
 
 .masked-image {
