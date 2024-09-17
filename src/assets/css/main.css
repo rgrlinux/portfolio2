@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&family=Saira:wght@400;500;600&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css");
+@import url("https://kit.fontawesome.com/a076d05399.js");
 html {
   scroll-behavior: smooth;
 }
@@ -13,7 +14,7 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   padding-top: 50px;
-  color: white;
+  color: #f5f5f5;
   height: 100vh;
 }
 
@@ -23,7 +24,7 @@ i {
 }
 
 nav {
-  color: white;
+  color: #f5f5f5;
 }
 
 section {
@@ -31,7 +32,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #f5f5f5;
 }
 
 .flag-icon:hover {
@@ -80,8 +81,8 @@ header {
   font-size: 1.25rem;
   font-family: "Roboto";
   font-weight: 100;
-  letter-spacing: 1.75rem; /* Ajuste conforme necessário */
-  color: #c5c6c7; /* Ajuste conforme necessário */
+  letter-spacing: 1.75rem;
+  color: #f5f5f5;
 }
 .hero .skills {
   margin-top: 1.5rem;
@@ -145,17 +146,17 @@ header {
 }
 .about .box-right .experience-item {
   display: flex;
-  justify-content: space-between; /* Distribui os elementos horizontalmente */
-  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: space-between;
+  align-items: center;
   background-color: transparent;
   padding: 10px;
 }
 .about .box-right .experience-icon img {
-  width: 50px; /* Ajuste conforme necessário */
+  width: 50px;
   height: auto;
 }
 .about .box-right .experience-details {
-  flex: 1; /* Ocupa o espaço disponível entre o ícone e as datas */
+  flex: 1;
   padding-left: 20px;
 }
 .about .box-right .experience-details h3, .about .box-right .experience-details .h3 {
@@ -173,7 +174,7 @@ header {
 .about .box-right .experience-dates {
   font-size: 0.75rem;
   font-family: "Saira";
-  color: #007bff; /* Ajuste a cor conforme necessário */
+  color: #007bff;
 }
 .about .box-right .work-footer {
   color: #007bff;
@@ -212,12 +213,12 @@ header {
 }
 
 .scrollable-content::-webkit-scrollbar-thumb {
-  background-color: #007bff; /* Cor da barra de rolagem */
+  background-color: #007bff;
   border-radius: 10px;
 }
 
 .scrollable-content::-webkit-scrollbar-track {
-  background: #1A1A1A; /* Cor do fundo da barra de rolagem */
+  background: #1A1A1A;
 }
 
 .masked-image {
@@ -231,9 +232,9 @@ header {
   border: 2px solid #4356FF;
   color: #4356FF;
   background-color: transparent;
-  border-radius: 15px; /* Ajuste conforme necessário */
-  padding: 0.5rem 2rem; /* Ajuste conforme necessário */
-  font-size: 1.25rem; /* Ajuste conforme necessário */
+  border-radius: 15px;
+  padding: 0.5rem 2rem;
+  font-size: 1.25rem;
   transition: all 0.3s ease;
   font-family: "Saira";
 }
@@ -241,6 +242,40 @@ header {
 .custom-btn:hover {
   background-color: #4356FF;
   color: #fff;
+}
+
+.contact {
+  text-align: center;
+  background-color: #1A1A1A;
+  color: #fff;
+  padding: 3rem 1rem;
+  border-radius: 0.625rem;
+  font-family: "Roboto";
+}
+.contact .avatar {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.contact .btn-whatsapp {
+  color: #25D366;
+  border-color: #25D366;
+}
+.contact .btn-whatsapp:hover {
+  background-color: #25D366;
+  color: white;
+}
+.contact .btn-email {
+  color: #007bff;
+  border-color: #007bff;
+}
+.contact .btn-email:hover {
+  background-color: #007bff;
+  color: white;
+}
+.contact h2, .contact .h2 {
+  font-family: "Saira";
 }
 
 /*!

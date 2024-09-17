@@ -14,7 +14,7 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     padding-top: 50px;
-    color: white;
+    color: $white-smoke-color;
     height: 100vh;
 }
 
@@ -25,7 +25,7 @@ i{
 }
 
 nav{
-    color: white;
+    color: $white-smoke-color;
 }
 
 section{
@@ -33,5 +33,5 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: $white-smoke-color;
 }
