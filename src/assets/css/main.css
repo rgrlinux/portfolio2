@@ -188,6 +188,7 @@ header {
   height: 3rem;
   z-index: 10;
   align-items: center;
+  font-family: "Saira";
 }
 .about .box-right .work-footer a {
   text-decoration: none;
