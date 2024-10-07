@@ -202,6 +202,26 @@ header {
   padding-left: 1rem;
 }
 
+footer {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  font-family: "Saira";
+  width: 100%;
+  border-top: 1px solid grey;
+  justify-items: center;
+  padding: 0;
+  z-index: 11;
+}
+footer div {
+  padding: 1rem 0;
+  width: 50%;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
 .scrollable-content {
   padding-top: 0;
 }
